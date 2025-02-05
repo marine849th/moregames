@@ -39,17 +39,18 @@
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;
+            transition: 0.3s;
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            overflow: hidden;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            width: 150px;
-            height: 180px;
-            overflow: hidden;
         }
         .game-list li img {
             width: 100%;
-            height: 80%;
+            height: auto;
             object-fit: cover;
             border-radius: 5px 5px 0 0;
         }
@@ -59,6 +60,7 @@
             padding: 10px 0;
             background: #bbb;
             border-radius: 0 0 5px 5px;
+            text-align: center;
         }
         .game-list li:hover {
             background: #aaa;
