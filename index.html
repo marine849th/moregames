@@ -1,18 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>More Games</title>
+    <title>More Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            width: 90%;
+            margin: 50px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        .game-list {
+            list-style: none;
+            padding: 0;
+        }
+        .game-list li {
+            background: #ddd;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .game-list li:hover {
+            background: #bbb;
+        }
+    </style>
 </head>
 <body>
-    <h1>No More Tears Project</h1>
-    <p>Link</p>
-	<img src="m_ad1.png"></img>
-	<img src="m_ad2.png"></img>
-	<img src="m_ad3.png"></img>
-	<img src="m_ad4.png"></img>
-	<img src="m_ad5.png"></img>
-	
+    <div class="container">
+        <h1>More Games</h1>
+        <ul class="game-list">
+            <li onclick="location.href='game1.html'">Game 1</li>
+            <li onclick="location.href='game2.html'">Game 2</li>
+            <li onclick="location.href='game3.html'">Game 3</li>
+        </ul>
+    </div>
 </body>
 </html>
