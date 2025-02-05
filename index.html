@@ -28,25 +28,40 @@
         .game-list {
             list-style: none;
             padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .game-list li {
             background: #ddd;
-            margin: 10px 0;
-            padding: 15px;
+            margin: 10px;
+            padding: 0;
             border-radius: 5px;
             cursor: pointer;
             transition: 0.3s;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
+            width: 150px;
+            height: 180px;
+            overflow: hidden;
         }
         .game-list li img {
-            width: 50px;
-            height: 50px;
-            margin-right: 10px;
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+        .game-list li span {
+            display: block;
+            width: 100%;
+            padding: 10px 0;
+            background: #bbb;
+            border-radius: 0 0 5px 5px;
         }
         .game-list li:hover {
-            background: #bbb;
+            background: #aaa;
         }
     </style>
 </head>
@@ -54,9 +69,9 @@
     <div class="container">
         <h1>More Games</h1>
         <ul class="game-list">
-            <li onclick="location.href='https://play.google.com/store/apps/details?id=jpark.AOS5'"><img src="m_ad3.png" alt="Game 2">Game 2</li>
-            <li onclick="location.href='https://play.google.com/store/apps/details?id=button.games.blockarts'"><img src="m_ad1.png" alt="Game 1">Game 1</li>
-            <li onclick="location.href='https://play.google.com/store/apps/details?id=nomore.games.PuzzleANDPuzzle'"><img src="m_ad2.png" alt="Game 2">Game 2</li>
+            <li onclick="location.href='https://play.google.com/store/apps/details?id=jpark.AOS5'"><img src="m_ad1.png" alt="Game 1"><span>Game 1</span></li>
+            <li onclick="location.href='https://play.google.com/store/apps/details?id=button.games.blockarts'"><img src="m_ad2.png" alt="Game 2"><span>Game 2</span></li>
+            <li onclick="location.href='https://play.google.com/store/apps/details?id=nomore.games.PuzzleANDPuzzle'"><img src="m_ad3.png" alt="Game 3"><span>Game 3</span></li>
         </ul>
     </div>
 </body>
